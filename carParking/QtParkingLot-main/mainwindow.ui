@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainQindow{backgroud-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255)) };</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(205, 205, 205), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="queue1">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>70</y>
+         <width>57</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-image: url(&quot;D:/QtParkingLot-main/parkinglot.png&quot;);
+font:20px bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="queue5">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>300</y>
+         <width>57</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-image: url(&quot;D:/QtParkingLot-main/parkinglot.png&quot;);
+font:20px bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="queue4">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>250</y>
+         <width>57</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-image: url(&quot;D:/QtParkingLot-main/parkinglot.png&quot;);
+font:20px bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="queue3">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>190</y>
+         <width>57</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-image: url(&quot;D:/QtParkingLot-main/parkinglot.png&quot;);
+font:20px bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="queue2">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>130</y>
+         <width>57</width>
+         <height>38</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-image: url(&quot;D:/QtParkingLot-main/parkinglot.png&quot;);
+font:20px bold;
+}</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="inputlabel">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>430</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font-family:Consolas;
+	font-size:16px;
+	border-radius:2px;
+}</string>
+       </property>
+       <property name="text">
+        <string> 请输入车牌号</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="enterbutton">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	font: bold 12px;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid #3a8ee6;
+    color: #409eff;
+}
+
+#button3 {
+    border-radius: 20px;
+}</string>
+       </property>
+       <property name="text">
+        <string>驶入</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="outbutton">
+       <property name="geometry">
+        <rect>
+         <x>730</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	font: bold 12px;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid #3a8ee6;
+    color: #409eff;
+}
+
+#button3 {
+    border-radius: 20px;
+}</string>
+       </property>
+       <property name="text">
+        <string>离开</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="checkbutton">
+       <property name="geometry">
+        <rect>
+         <x>860</x>
+         <y>430</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	font: bold 12px;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid #3a8ee6;
+    color: #409eff;
+}
+
+#button3 {
+    border-radius: 20px;
+}</string>
+       </property>
+       <property name="text">
+        <string>当前信息</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="inputnum">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>430</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#FFFFFF;
+	border-style:solid;
+	border-width:0px 4px 0px 0px;
+	border-color:#00B7DE;
+	padding:8px 4px 8px 8px;
+	background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgb(199, 199, 199),stop:1 rgb(85, 255, 255));
+</string>
+       </property>
+      </widget>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>481</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="contextMenuPolicy">
+        <enum>Qt::ContextMenuPolicy::DefaultContextMenu</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>462</width>
+          <height>500000</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>500000</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(248, 248, 248, 255), stop:1 rgba(255, 255, 255, 255));</string>
+        </property>
+        <widget class="QLabel" name="showmessage">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>9</y>
+           <width>1191</width>
+           <height>499991</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>黑体</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+border-color: rgb(85, 255, 255);
+	font: 10pt &quot;黑体&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;智慧停车场仿真系统设计与实现&lt;/p&gt;&lt;p&gt;kkry2004@github 设计&lt;/p&gt;&lt;p&gt;请先输入您的停车场车位数量&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="controllabel_2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font:12px blod;
+background-color:rgb(197, 197, 197);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>智慧停车场仿真系统设计与实现</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="inputlabel_2">
+       <property name="geometry">
+        <rect>
+         <x>520</x>
+         <y>20</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font-family:Consolas;
+	font-size:16px;
+	border-radius:2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>等候区</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="inputlabel_3">
+       <property name="geometry">
+        <rect>
+         <x>760</x>
+         <y>20</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font-family:Consolas;
+	font-size:16px;
+	border-radius:2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>停车场</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="inputParkingSlots">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>370</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#FFFFFF;
+	border-style:solid;
+	border-width:0px 4px 0px 0px;
+	border-color:#00B7DE;
+	padding:8px 4px 8px 8px;
+	background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 rgb(214, 214, 214),stop:1 rgb(85, 255, 255));
+</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="generateButton">
+       <property name="geometry">
+        <rect>
+         <x>810</x>
+         <y>370</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	font: bold 12px;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid #3a8ee6;
+    color: #409eff;
+}
+
+#button3 {
+    border-radius: 20px;
+}</string>
+       </property>
+       <property name="text">
+        <string>数量确认</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="parkingArea">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>60</y>
+         <width>321</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="inputlabel_4">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>370</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font-family:Consolas;
+	font-size:16px;
+	border-radius:2px;
+}</string>
+       </property>
+       <property name="text">
+        <string>  车位数量</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="generateLicenseButton">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>370</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    padding: 10px;
+    border-radius: 5px;
+	font: bold 12px;
+}
+
+QPushButton:hover {
+    background-color: #ecf5ff;
+    color: #409eff;
+}
+
+QPushButton:pressed, QPushButton:checked {
+    border: 1px solid #3a8ee6;
+    color: #409eff;
+}
+
+#button3 {
+    border-radius: 20px;
+}</string>
+       </property>
+       <property name="text">
+        <string>随机生成车牌</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1006</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
